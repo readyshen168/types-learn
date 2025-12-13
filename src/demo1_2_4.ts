@@ -1,11 +1,4 @@
-function first<T>(elements: T[], p: (elem: T) => boolean ): T | undefined{
-    for(let e of elements){
-        if(p(e)){
-            return e;
-        }
-    }
-}
-
+import {first} from './utils/first';
 
 export function findFirstNegativeNumber(numbers: number[]): number | undefined{
     return first(numbers, num => num < 0 );
