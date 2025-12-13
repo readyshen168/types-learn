@@ -1,12 +1,25 @@
 {
     "compilerOptions": {
-        "paths": { "*": ["./src/*"] },
+        "baseUrl": "./src",
+        // "paths": { "*": ["./src/*"] },
+        /*
+        "paths": {
+            "@utils/*": ["./utils/*"],
+            "@/*":["./*"]
+        },
+        */
 
         "outDir": "dist",
         "noEmitOnError": true,
         "target": "es5",
 
         // 根据目标运行环境选择
-        "lib": ["ES2015", "DOM"]
-    }
+        "lib": ["ES2015", "DOM"],
+        // 更好的模块互操作性
+        "esModuleInterop": true,
+        // 严格类型检查
+        "strict": true
+        
+    },
+    "include": ["src/**/*"]
 }

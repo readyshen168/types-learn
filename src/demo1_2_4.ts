@@ -1,4 +1,4 @@
-import {first} from './utils/first';
+import { first } from './utils';
 
 export function findFirstNegativeNumber(numbers: number[]): number | undefined{
     return first(numbers, num => num < 0 );
