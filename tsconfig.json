@@ -1,25 +1,21 @@
 {
     "compilerOptions": {
         "baseUrl": "./src",
-        // "paths": { "*": ["./src/*"] },
-        /*
         "paths": {
             "@utils/*": ["./utils/*"],
-            "@/*":["./*"]
+            "@/*": ["./*"]
         },
-        */
-
         "outDir": "dist",
         "noEmitOnError": true,
         "target": "es5",
-
-        // 根据目标运行环境选择
         "lib": ["ES2015", "DOM"],
-        // 更好的模块互操作性
         "esModuleInterop": true,
-        // 严格类型检查
-        "strict": true
-        
+        "strict": true,
+        "types": ["jest"]  // 包含Jest类型定义
     },
-    "include": ["src/**/*"]
+    "include": [
+        "src/**/*",
+        "src/__tests__/**/*"  // 包含测试文件
+    ],
+    "exclude": ["node_modules", "dist"]
 }

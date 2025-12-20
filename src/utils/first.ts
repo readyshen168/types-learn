@@ -4,4 +4,5 @@ export function first<T>(elements: T[], p: (elem: T) => boolean ): T | undefined
             return e;
         }
     }
+    return undefined;
 }
