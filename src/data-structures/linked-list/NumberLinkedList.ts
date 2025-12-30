@@ -2,7 +2,7 @@ import { NumberListNode } from './NumberListNode';
 
 export class NumberLinkedList {
 
-    private tail: NumberListNode = { value: 0; next: undefined};
+    private tail: NumberListNode = { value: 0, next: undefined};
     private head: NumberListNode = this.tail;
 
     append(value: number): void{
