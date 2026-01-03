@@ -10,7 +10,7 @@ class NumberListNode {
 }
 
 class NumberLinkedList {
-    private tail: NumberListNode = { value: 0; next: undefined};
+    private tail: NumberListNode = { value: 0, next: undefined};
     private head: NumberListNode = this.tail;
 
     append(value: number): void{
@@ -19,7 +19,7 @@ class NumberLinkedList {
     }
 
     at(index: number): number {
-        let result = head.next; 
+        let result = this.head.next; 
         for(let i = 0; i < index && result != undefined; i++){
                 result = result.next;
         }
