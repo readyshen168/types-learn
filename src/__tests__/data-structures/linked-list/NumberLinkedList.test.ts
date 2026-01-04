@@ -1,4 +1,6 @@
-import { NumberLinkedList } from '../../../data-structures';
+//import { NumberLinkedList } from '../../../data-structures';
+import { NumberLinkedList } from '@data-structures';
+
 
 describe('NumberLinkedList', () => {
     test('应该正确初始化', () => {

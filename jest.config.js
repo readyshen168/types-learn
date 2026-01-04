@@ -22,7 +22,10 @@ module.exports = {
   // !!! 重要修正：这里应该是 moduleNameMapper 而非 moduleNameMapping
   moduleNameMapper: {
     '^@utils/(.*)$': '<rootDir>/src/utils/$1',
-    '^@/(.*)$': '<rootDir>/src/$1'
+    '^@utils$': '<rootDir>/src/utils',
+    '^@/(.*)$': '<rootDir>/src/$1',
+    '^@data-structures/(.*)$': '<rootDir>/src/data-structures/$1',
+    '^@data-structures$': '<rootDir>/src/data-structures'
   },
   // 覆盖率配置
   collectCoverage: true,

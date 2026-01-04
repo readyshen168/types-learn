@@ -1,4 +1,5 @@
-import { first } from '../../utils';
+//import { first } from '../../utils';
+import { first } from '@utils';
 
 /**
  * first函数单元测试

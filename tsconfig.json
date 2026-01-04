@@ -3,7 +3,10 @@
         "baseUrl": "./src",
         "paths": {
             "@utils/*": ["./utils/*"],
-            "@/*": ["./*"]
+            "@utils": ["./utils"],
+            "@/*": ["./*"],
+            "@data-structures/*":["./data-structures/*"],
+            "@data-structures":["./data-structures"],
         },
         "outDir": "dist",
         "noEmitOnError": true,
