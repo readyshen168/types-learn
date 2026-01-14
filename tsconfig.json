@@ -9,7 +9,7 @@
             "@data-structures":["./data-structures"],
         },
         "outDir": "dist",
-        "noEmitOnError": true,
+        "noEmitOnError": true, // 如果TypeScript编译过程中出现错误，将不会生成JavaScript文件
         "target": "es5",
         "lib": ["ES2015", "DOM"],
         "esModuleInterop": true,

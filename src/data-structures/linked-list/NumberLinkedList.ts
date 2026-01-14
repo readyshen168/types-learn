@@ -11,6 +11,7 @@ export class NumberLinkedList {
     }
 
     at(index: number): number {
+        if (index < 0) throw new RangeError();
         let result = this.head.next; 
         for(let i = 0; i < index && result != undefined; i++){
                 result = result.next;
