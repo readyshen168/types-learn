@@ -1,8 +1,8 @@
 {
     "compilerOptions": {
         "rootDir": "./src",
-         "baseUrl": "./src",
-        "ignoreDeprecations": "6.0",
+        "baseUrl": "./src",
+        // "ignoreDeprecations": "6.0",
         "paths": {
             "@utils/*": ["./utils/*"],
             "@utils": ["./utils"],
@@ -12,7 +12,7 @@
         },
         "outDir": "dist",
         "noEmitOnError": true, // 如果TypeScript编译过程中出现错误，将不会生成JavaScript文件
-        "target": "es5",
+        "target": "esnext",
         "lib": ["ES2015", "DOM"],
         "esModuleInterop": true,
         "strict": true,

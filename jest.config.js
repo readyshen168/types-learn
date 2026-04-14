@@ -1,19 +1,13 @@
-const { createDefaultPreset } = require("ts-jest");
-
-const tsJestTransformCfg = createDefaultPreset().transform;
-
 /** @type {import("jest").Config} **/
 module.exports = {
   // 使用 ts-jest 预设，这是处理 TypeScript 的标准方式
   preset: 'ts-jest',
   // 测试环境
   testEnvironment: "node",
-  // 转换规则（保留自动生成的配置）
-  transform: {
-    ...tsJestTransformCfg,
-  },
+
   // 指定测试根目录，提升效率
   roots: ['<rootDir>/src'],
+
   // 明确测试文件匹配模式
   testMatch: [
     '**/__tests__/**/*.test.ts',
@@ -29,15 +23,6 @@ module.exports = {
   },
   // 覆盖率配置
   collectCoverage: true,
-  // 强制收集所有文件的覆盖率
-  // collectCoverageFrom: [
-    //'src/**/*.ts',
-    //'!src/**/*.d.ts',
-    //'!src/__tests__/**/*.ts'
-  //],
-  // 禁用缓存
-  //cache: false,
-  //clearMocks: true,
   
   // 详细输出
   verbose: true,
