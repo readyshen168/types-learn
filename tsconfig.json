@@ -1,8 +1,10 @@
 {
     "compilerOptions": {
-        "baseUrl": "./src",
+        "rootDir": "./src",
+         "baseUrl": "./src",
+        "ignoreDeprecations": "6.0",
         "paths": {
-            //"@utils/*": ["./utils/*"],
+            "@utils/*": ["./utils/*"],
             "@utils": ["./utils"],
             "@/*": ["./*"],
             "@data-structures/*":["./data-structures/*"],
